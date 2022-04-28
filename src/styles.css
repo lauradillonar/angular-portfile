@@ -1,1 +1,427 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: "Nunito";
+    src: url("./assets/fonts/Nunito-Regular.ttf");
+}
+
+body{
+    font-family: "Nunito",sans-serif;
+    font-size: 14px;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    color: #b89462;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:visited{
+    color: #b89462;
+    background-color: white; 
+}
+
+.nav-link:hover {
+    color:white;
+    background-color: #b89462;
+}
+
+
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #b89462;
+    cursor: pointer;
+    text-decoration:none;
+    height: 94px;
+}
+
+/* main section */
+
+.main{
+    background: transparent;
+    width: 100%;
+    height: 200px;
+    padding-top: 70px;
+}
+
+.main h3{
+    font-size: 1.3rem;
+    font-weight:600;
+    color: #b89462;
+}
+
+.main h6{
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #b89462;
+    /* line-height:1; */
+    /* border-bottom: 1px solid #cba46d; */
+    /* width: 170px; */
+}
+
+.main .bt1{
+    height: 35px;
+    width: 138px;
+    background-color: #b89462;
+    color: white;
+    outline: none;
+    border:none;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.main .bt1:hover{
+    background-color: #b89462;
+    transition: 0.5;
+}
+
+.main .bt2{
+    height: 35px;
+    width: 138px;
+    background-color: transparent;
+    color: #b89462;
+    outline: none;
+    border:1px solid #b89462;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.main .bt2:hover{
+    background-color: #b89462;
+    transition: 0.5;
+    color:white;
+}
+
+
+
+.about img{
+   
+
+    -webkit-box-shadow: 10px 4px 28px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 4px 28px -19px rgba(0,0,0,0.75);
+box-shadow: 10px 4px 28px -19px rgba(0,0,0,0.75);
+
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+}
+
+h1{
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #b89462;
+}
+
+p{
+    color: #b89462;
+}
+
+.progress-block{
+    display: grid;
+    flex-direction: row;
+    
+
+}
+
+.progress{
+      background-color: #ccc;
+      border-radius: 50px;
+      align-items: center;
+      position: relative;
+      display: block;
+      height: 25px;
+      width: auto;
+
+      -webkit-box-shadow: inset -11px -10px 18px -14px rgba(0,0,0,0.75);
+      -moz-box-shadow: inset -11px -10px 18px -14px rgba(0,0,0,0.75);
+      box-shadow: inset -11px -10px 18px -14px rgba(0,0,0,0.75);
+}
+
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: #b89462;
+    height: 25px;
+    width: 0;
+}
+
+.progress p{
+    color: white;
+    padding: 4px;
+}
+
+@keyframes load1 {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: #b89462;
+    height: 25px;
+    width: 0;
+}
+
+@keyframes load2 {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: #b89462;
+    height: 25px;
+    width: 0;
+}
+
+@keyframes load3 {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: #b89462;
+    height: 25px;
+    width: 0;
+}
+
+@keyframes load4 {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.pro-value5{
+    animation: load5 3s normal forwards;
+    border-radius: 50px;
+    background-color: #b89462;
+    height: 25px;
+    width: 0;
+}
+
+@keyframes load5 {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+.pro-value6{
+    animation: load6 3s normal forwards;
+    border-radius: 50px;
+    background-color: #b89462;
+    height: 25px;
+    width: 0;
+}
+
+@keyframes load6 {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.card{
+    border:none;
+    outline: none;
+
+    -webkit-box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
+    -moz-box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
+    box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
+}
+
+
+.card h4{
+    color: #616161;
+}
+.card p{
+    color: gray;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: #d4f2d5;
+    color: #616161;
+    padding-top: 20px;
+    font-size: 21px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.card:hover .circle{
+    background-color: grey;
+    color:white;
+    transition: 0.5s;
+}
+
+.experience .card{
+    border: none;
+    outline: none;
+
+    -webkit-box-shadow: -4px 8px 92px -20px rgba(0,0,0,0.3);
+    -moz-box-shadow: -4px 8px 92px -20px rgba(0,0,0,0.3);
+    box-shadow: -4px 8px 92px -20px rgba(0,0,0,0.3);
+}
+
+.experience .card a{
+    color: #b89462
+}
+
+.experience .card a:visited{
+    color: #b89462;
+}
+
+.experience .card a:hover {
+    font-weight: 700;
+
+}
+
+.experience .card .title{
+    color:#616161;
+    background-color: #d4f2d5;
+}
+
+
+.education .card{
+    height: 100%;
+    border:none;
+    outline: none;
+
+    -webkit-box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
+    -moz-box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
+    box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
+}
+
+.education .card .title-ed{
+    color: #616161;
+    background-color: white;
+
+}
+
+.education .card a{
+    color: #b89462
+}
+
+.education .card a:visited{
+    color: #b89462;
+}
+
+.education .card a:hover {
+    font-weight: 700;
+
+}
+
+ul{
+    list-style-type: square;
+    color: gray;
+}
+
+.contact h5{
+    color: #616161;
+    font-weight: 700;
+}
+
+.contact p{
+    color: #616161;
+}
+
+.contact .circle:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.5;
+}
+
+.contact .btn3{
+    background-color: #616161;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+
+.btn3:hover{
+    background-color: transparent;
+    color: #616161;
+    border: 1px solid #616161;
+    transition: 0.5;
+}
+
+footer{
+
+    background-color: #616161;
+}
+
+footer p{
+    color: lightgray;
+}
+
+@media only screen and (max-width:576px) {
+    .about img{
+        width: 35%;
+    }
+}
+@media only screen and (min-width:576px) {
+    .about img{
+        width: 30%;
+    }
+}
+@media only screen and (min-width:768px) {
+    .about img{
+        width: 32%;
+    }
+}
+@media only screen and (min-width:992px) {
+    .about img{
+        width: 15%;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .about img{
+        width: 35%;
+    }
+}
+@media only screen and (min-width:1400px) {
+    .about img{
+        width: 25%;
+    }
+}
