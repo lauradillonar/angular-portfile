@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfileService } from 'src/app/services/portfile.service';
 
 @Component({
   selector: 'app-hello',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: PortfileService) { }
+
+  myPortfile:any;
 
   ngOnInit(): void {
+    this.data.getData().subscribe(data =>{
+      console.log(data);
+      this.myPortfile=data;
+    });
   }
 
 }
