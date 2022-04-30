@@ -54,32 +54,32 @@
                                 {
                                     "id": 1,
                                     "item": "HTML/CSS",
-                                    "progress": "90%"
+                                    "progress": "90"
                                 },
                                 {
                                     "id": 2,
                                     "item": "JAVASCRIPT",
-                                    "progress": "80%"
+                                    "progress": "80"
                                 },
                                 {
                                     "id": 3,
                                     "item": "BOOTSTRAP",
-                                    "progress": "90%"
+                                    "progress": "90"
                                 },
                                 {
                                     "id": 4,
                                     "item": "ANGULAR",
-                                    "progress": "70%"
+                                    "progress": "70"
                                 },
                                 {
                                     "id": 5,
                                     "item": "PHP/MySQL",
-                                    "progress": "80%"
+                                    "progress": "80"
                                 },
                                 {
                                     "id": 6,
                                     "item": "WORDPRESS",
-                                    "progress": "90%"
+                                    "progress": "90"
                                 }
                             ]
                 } 

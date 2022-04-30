@@ -19,8 +19,8 @@
       box-shadow: inset -11px -10px 18px -14px rgba(0,0,0,0.75);
 }
 
-.pro-value1{
-    animation: load1 3s normal forwards;
+.pro-value10{
+    animation: load10 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
@@ -33,7 +33,7 @@
 }
 
 
-@keyframes load1 {
+@keyframes load10 {
     0%{
         width:0;
     }
@@ -42,15 +42,15 @@
     }
 }
 
-.pro-value2{
-    animation: load2 3s normal forwards;
+.pro-value20{
+    animation: load20 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load2 {
+@keyframes load20 {
     0%{
         width:0;
     }
@@ -59,15 +59,15 @@
     }
 }
 
-.pro-value3{
-    animation: load3 3s normal forwards;
+.pro-value30{
+    animation: load30 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load3 {
+@keyframes load30 {
     0%{
         width:0;
     }
@@ -76,15 +76,15 @@
     }
 }
 
-.pro-value4{
-    animation: load4 3s normal forwards;
+.pro-value40{
+    animation: load40 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load4 {
+@keyframes load40 {
     0%{
         width:0;
     }
@@ -93,15 +93,15 @@
     }
 }
 
-.pro-value5{
-    animation: load5 3s normal forwards;
+.pro-value50{
+    animation: load50 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load5 {
+@keyframes load50 {
     0%{
         width:0;
     }
@@ -110,15 +110,15 @@
     }
 }
 
-.pro-value6{
-    animation: load6 3s normal forwards;
+.pro-value60{
+    animation: load60 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load6 {
+@keyframes load60 {
     0%{
         width:0;
     }
@@ -127,15 +127,15 @@
     }
 }
 
-.pro-value7{
-    animation: load7 3s normal forwards;
+.pro-value70{
+    animation: load70 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load7 {
+@keyframes load70 {
     0%{
         width:0;
     }
@@ -144,15 +144,15 @@
     }
 }
 
-.pro-value8{
-    animation: load8 3s normal forwards;
+.pro-value80{
+    animation: load80 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load8 {
+@keyframes load80 {
     0%{
         width:0;
     }
@@ -161,15 +161,15 @@
     }
 }
 
-.pro-value9{
-    animation: load9 3s normal forwards;
+.pro-value90{
+    animation: load90 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load9 {
+@keyframes load90 {
     0%{
         width:0;
     }
@@ -178,15 +178,15 @@
     }
 }
 
-.pro-value10{
-    animation: load10 3s normal forwards;
+.pro-value100{
+    animation: load100 3s normal forwards;
     border-radius: 50px;
     background-color: #b89462;
     height: 25px;
     width: 0;
 }
 
-@keyframes load10 {
+@keyframes load100 {
     0%{
         width:0;
     }

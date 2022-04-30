@@ -17,74 +17,16 @@
 
         <div class="progress-block">
           <div class="progress my-1" *ngFor="let skill of skills; index as i">
-            <div *ngIf="skill.progress === '10%'" class="pro-value1 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '20%'" class="pro-value2 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '30%'" class="pro-value3 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '40%'" class="pro-value4 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '50%'" class="pro-value5 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '60%'" class="pro-value6 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '70%'" class="pro-value7 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '80%'" class="pro-value8 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '90%'" class="pro-value9 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
-            </div>
-
-            <div *ngIf="skill.progress === '100%'" class="pro-value10 ps-2">
-              <p>
-                {{ skill.item }}
-                <span text-white float-right> {{ skill.progress }}</span>
-              </p>
+            <div *ngFor="let value of values">
+              <div
+                *ngIf="skill.progress === value + ''"
+                class="pro-value{{ value }} ps-2"
+              >
+                <p>
+                  {{ skill.item }}
+                  <span text-white float-right> {{ skill.progress }}%</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
