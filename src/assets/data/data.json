@@ -9,23 +9,23 @@
                     "home":{
                                 "id": 1,
                                 "link": "HOME",
-                                "url": "#"
+                                "url": ""
                     }, 
                     "cards": [
                         {
                             "id": 2,
                             "link": "PROJECTS",
-                            "url":"#"
+                            "url":"#projects"
                         },
                         {
                             "id": 3,
                             "link": "EXPERIENCE",
-                            "url":"#"
+                            "url":"#experience"
                         },
                         {
                             "id": 4,
                             "link": "EDUCATION",
-                            "url": "#"
+                            "url": "#education"
                         },
                         {
                             "id": 5,
@@ -35,7 +35,7 @@
                         {
                             "id": 6,
                             "link": "CONTACT",
-                            "url": "#"
+                            "url": "#contact"
                         }
                     ]
             },
