@@ -31,6 +31,21 @@
     height: 94px;
 }
 
-.navbar-collapse{
-    color: #b89462;
+.navbar-toggler-icon{
+    color:#b89462;
+    font-size: 1.5rem;
+    padding-top: .3rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    border: none;
+
 }
+
+.navbar-toggler{
+    box-shadow: none;
+}
+.navbar-toggler:focus{
+    border:none;
+    box-shadow: none;
+}
+
