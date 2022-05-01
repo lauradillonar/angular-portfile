@@ -23,12 +23,12 @@
               >
             </p>
             <p *ngIf="item?.text1 != ''" [innerHTML]="item?.text2"></p>
-            <p *ngIf="item?.readmore != ''">
+            <p class="viewmore" *ngIf="item?.viewmore != ''">
               <a
-                href="{{ item?.readmore }}"
+                href="{{ item?.viewmore }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><br />Read more</a
+                ><br />{{ item?.viewmoretext }}</a
               >
             </p>
           </div>
@@ -53,12 +53,12 @@
               >
             </p>
             <p *ngIf="item?.text1 != ''" [innerHTML]="item?.text2"></p>
-            <p *ngIf="item?.readmore != ''">
+            <p class="viewmore" *ngIf="item?.viewmore != ''">
               <a
-                href="{{ item?.readmore }}"
+                href="{{ item?.viewmore }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><br />Read more</a
+                ><br />{{ item?.viewmoretext }}</a
               >
             </p>
           </div>

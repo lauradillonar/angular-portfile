@@ -3,6 +3,8 @@
     border:none;
     outline: none;
 
+    position: relative;
+
     -webkit-box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
     -moz-box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
     box-shadow: -20px 24px 89px -46px rgba(0,0,0,0.59);
@@ -30,4 +32,11 @@
 ul{
     list-style-type: square;
     color: gray;
+}
+
+
+.viewmore{
+    position: absolute;
+    bottom: 1rem;
+    right: 3rem;
 }

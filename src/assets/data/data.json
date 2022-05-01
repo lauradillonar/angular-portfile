@@ -89,46 +89,59 @@
                         "title": "Projects.",
                         "cards":[
                             {
+                                "id": 1,
                                 "fontawasome": "fab fa-js fa-lg fa-fw",
                                 "letter": "",
                                 "title": "JavaScript",
-                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem pariatur eligendi facere quia blanditiis asperiores, repudiandae architecto amet aspernatur in totam quos accusantium dicta eius similique itaque beatae quaerat!",
-                                "readmore": "#"
+                                "text": "Data handling activities in tables and lists. Responsive design. Keyboard shortcuts.",
+                                "viewmore": "",
+                                "viewmoretext": "View more",
+                                "text-description": "Esta es una descripción de la tarjeta 1."
                             },
                             {
+                                "id": 2,
                                 "fontawasome": "fab fa-php fa-lg fa-fw",
                                 "letter": "",
                                 "title": "PHP / MySQL",
-                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem pariatur eligendi facere quia blanditiis asperiores, repudiandae architecto amet aspernatur in totam quos accusantium dicta eius similique itaque beatae quaerat!",
-                                "readmore": "#"
+                                "text": "This app is used to take notes and study collaboratively with other people.",
+                                "viewmore": "",
+                                "viewmoretext": "View more"
                             },
                             {
+                                "id": 3,
                                 "fontawasome": "fab fa-wordpress-simple fa-lg fa-fw",
                                 "letter": "",
                                 "title": "WordPress",
-                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem pariatur eligendi facere quia blanditiis asperiores, repudiandae architecto amet aspernatur in totam quos accusantium dicta eius similique itaque beatae quaerat!",
-                                "readmore": "#"
+                                "text": "In this space, I share material and activities to work on understanding and expression, such as support products to increase and compensate for the communication difficulties of many people.",
+                                "viewmore": "https://confluenciacreativa.com",
+                                "viewmoretext": "View more"
                             },
                             {
+                                "id": 4,
                                 "fontawasome": "fab fa-angular fa-lg fa-fw",
                                 "letter": "",
                                 "title": "Angular",
-                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem pariatur eligendi facere quia blanditiis asperiores, repudiandae architecto amet aspernatur in totam quos accusantium dicta eius similique itaque beatae quaerat!",
-                                "readmore": "#"
+                                "text": "App to create your own portfolio.",
+                                "viewmore": "",
+                                "viewmoretext": "View more"
                             },
                             {
+                                "id": 5,
                                 "fontawasome": "",
                                 "letter": "M",
                                 "title": "Super Mario",
-                                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem pariatur eligendi facere quia blanditiis asperiores, repudiandae architecto amet aspernatur in totam quos accusantium dicta eius similique itaque beatae quaerat!",
-                                "readmore": "#"
+                                "text": "Animation using Spreadsheets where Mario jumps the turtle when the mouse is clicked.",
+                                "viewmore": "",
+                                "viewmoretext": "View more"
                             },
                             {
+                                "id": 6,
                                 "fontawasome": "fab fa-github fa-lg fa-fw",
                                 "letter": "",
                                 "title": "GitHub",
                                 "text": "@lauradillonar",
-                                "readmore": "https://github.com/lauradillonar"
+                                "viewmore": "https://github.com/lauradillonar",
+                                "viewmoretext": "View more"
                             }
                         ]
                     },
@@ -213,7 +226,8 @@
                                             "link": "",
                                             "url":"",
                                             "text2":"",
-                                            "readmore": "https://www.argentina.gob.ar/ingles-para-desarrollo-de-software"
+                                            "viewmore": "https://www.argentina.gob.ar/ingles-para-desarrollo-de-software",
+                                            "viewmoretext": "View more"
                                         },
                                         {
                                             "title": "Argentina Programa<br />#YoProgramo",
@@ -223,7 +237,8 @@
                                             "link": "",
                                             "url":"",
                                             "text2":"",
-                                            "readmore": "https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
+                                            "viewmore": "https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa",
+                                            "viewmoretext": "View more"
                                         },
                                         {
                                             "title": "Argentina Programa<br />#SeProgramar",
@@ -233,7 +248,8 @@
                                             "link": "Show Credential",
                                             "url":"https://mumuki.io/argentina-programa/certificates/verify/RWGNivzgYUiwmBCT",
                                             "text2":"<ul><li>Programming Basics</li><li>Imperative Programming with JavaScript</li><li>Object Oriented Programming with Ruby</li></ul>",
-                                            "readmore": "https://www.argentina.gob.ar/produccion/argentina-programa/primera-etapa"
+                                            "viewmore": "https://www.argentina.gob.ar/produccion/argentina-programa/primera-etapa",
+                                            "viewmoretext": "View more"
                                         },
                                         {
                                             "title": "Introduction to programming with Python",
@@ -243,7 +259,8 @@
                                             "link": "",
                                             "url":"",
                                             "text2":"",
-                                            "readmore": "https://www.itgrarte.org/capacitacion/introduccion-a-la-programacion-en-python/"
+                                            "viewmore": "https://www.itgrarte.org/capacitacion/introduccion-a-la-programacion-en-python/",
+                                            "viewmoretext": "View more"
                                         },
                                         {
                                             "title": "Mathematics Teachers and Bachelor's Degree of Systems",
@@ -253,7 +270,8 @@
                                             "link": "",
                                             "url":"",
                                             "text2":"",
-                                            "readmore": ""
+                                            "viewmore": "",
+                                            "viewmoretext": "View more"
                                         },
                                         {
                                             "title": "Bachelor with pedagogical orientation",
@@ -263,7 +281,8 @@
                                             "link": "",
                                             "url":"",
                                             "text2":"",
-                                            "readmore": ""
+                                            "viewmore": "",
+                                            "viewmoretext": "View more"
                                         }
                             ]
                     },

@@ -25,3 +25,45 @@ p{
     color: #b89462;
 }
 
+.axis{
+    position: absolute;
+}
+
+.cfc{
+    margin-top: 45vh;
+    margin-left: 45vw;
+}
+
+.rotate360cw {
+    animation: load 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+}
+.rotate360ccw {
+    animation: load 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+}
+
+@keyframes load {
+    0%{
+        transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    }
+}
