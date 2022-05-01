@@ -3,28 +3,28 @@
     <div class="row">
       <div class="col-12 pt-3">
         <img
-          src="./assets/img/laura.jpg"
+          src="{{ lang?.about?.image?.src }}"
           data-aos="fade-right"
           data-aos-duration="2000"
-          alt="Laura Dillon"
+          alt="{{ lang?.about?.image?.alt }}"
           class="float-start mb-4 me-4"
         />
-        <h1 class="fw-bold">{{ myPortfile.en.about.title }}</h1>
+        <h1 class="fw-bold">{{ lang?.about?.title }}</h1>
         <p>
-          <span class="fw-bold">{{ myPortfile.en.about.subtitle }}</span>
+          <span class="fw-bold">{{ lang?.about?.subtitle }}</span>
         </p>
-        <p [innerHTML]="myPortfile.en.about.text"></p>
+        <p [innerHTML]="lang?.about?.text"></p>
 
         <div class="progress-block">
-          <div class="progress my-1" *ngFor="let skill of skills; index as i">
+          <div class="progress my-1" *ngFor="let skill of skills">
             <div *ngFor="let value of values">
               <div
-                *ngIf="skill.progress === value + ''"
+                *ngIf="skill?.progress === value + ''"
                 class="pro-value{{ value }} ps-2"
               >
                 <p>
-                  {{ skill.item }}
-                  <span text-white float-right> {{ skill.progress }}%</span>
+                  {{ skill?.item }}
+                  <span text-white float-right> {{ skill?.progress }}%</span>
                 </p>
               </div>
             </div>

@@ -11,11 +11,12 @@ export class HelloComponent implements OnInit {
   constructor(private data: PortfileService) { }
 
   myPortfile:any;
+  lang: any;
 
   ngOnInit(): void {
     this.data.getData().subscribe(data =>{
-      console.log(data);
       this.myPortfile=data;
+      this.lang = this.myPortfile.en;
     });
   }
 

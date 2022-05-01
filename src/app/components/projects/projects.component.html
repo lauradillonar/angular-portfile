@@ -1,129 +1,62 @@
 <section class="services py-5 bg-light">
   <div class="container py-5">
-    <h1 class="text-center pb-5">Projects.</h1>
+    <h1 class="text-center pb-5">{{ lang?.projects?.title }}</h1>
     <div class="row pb-3">
-      <div class="col-lg-4 mb-3">
+      <div class="col-lg-4 mb-3" *ngFor="let project of projects; index as i">
         <div
           class="card text-center py-3"
           data-aos="fade-right"
           data-aos-duration="2000"
+          *ngIf="i % 3 === 0"
         >
           <div class="card-body">
             <div class="circle">
-              <span><i class="fab fa-js fa-lg fa-fw"></i></span>
+              <span
+                ><i class="{{ project?.fontawasome }}"></i
+                ><span class="fw-bold">{{ project?.letter }}</span></span
+              >
             </div>
-            <h4 class="fw-bold pb-2">JavaScript</h4>
+            <h4 class="fw-bold pb-2">{{ project?.title }}</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate dolorem pariatur eligendi facere quia blanditiis
-              asperiores, repudiandae architecto amet aspernatur in totam quos
-              accusantium dicta eius similique itaque beatae quaerat!
+              {{ project?.text }}
             </p>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 mb-3">
         <div
           class="card text-center py-3"
           data-aos="fade-up"
           data-aos-duration="2000"
+          *ngIf="i % 3 === 1"
         >
           <div class="card-body">
             <div class="circle">
-              <span><i class="fab fa-php fa-lg fa-fw"></i></span>
+              <span
+                ><i class="{{ project?.fontawasome }}"></i
+                ><span class="fw-bold">{{ project?.letter }}</span></span
+              >
             </div>
-            <h4 class="fw-bold pb-2">PHP / MySql</h4>
+            <h4 class="fw-bold pb-2">{{ project?.title }}</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate dolorem pariatur eligendi facere quia blanditiis
-              asperiores, repudiandae architecto amet aspernatur in totam quos
-              accusantium dicta eius similique itaque beatae quaerat!
+              {{ project?.text }}
             </p>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-4 mb-3">
         <div
           class="card text-center py-3"
           data-aos="fade-left"
           data-aos-duration="2000"
+          *ngIf="i % 3 === 2"
         >
           <div class="card-body">
             <div class="circle">
-              <span><i class="fab fa-wordpress-simple fa-lg fa-fw"></i></span>
+              <span
+                ><i class="{{ project?.fontawasome }}"></i
+                ><span class="fw-bold">{{ project?.letter }}</span></span
+              >
             </div>
-            <h4 class="fw-bold pb-2">WordPress</h4>
+            <h4 class="fw-bold pb-2">{{ project?.title }}</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate dolorem pariatur eligendi facere quia blanditiis
-              asperiores, repudiandae architecto amet aspernatur in totam quos
-              accusantium dicta eius similique itaque beatae quaerat!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-3">
-        <div
-          class="card text-center py-3"
-          data-aos="fade-up-right"
-          data-aos-duration="2000"
-        >
-          <div class="card-body">
-            <div class="circle">
-              <span class="text-center"
-                ><i class="fab fa-angular fa-lg fa-fw"></i
-              ></span>
-            </div>
-            <h4 class="fw-bold pb-2">Angular</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate dolorem pariatur eligendi facere quia blanditiis
-              asperiores, repudiandae architecto amet aspernatur in totam quos
-              accusantium dicta eius similique itaque beatae quaerat!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-3">
-        <div
-          class="card text-center py-3"
-          data-aos="fade-down"
-          data-aos-duration="2000"
-        >
-          <div class="card-body">
-            <div class="circle">
-              <span class="fw-bold">M</span>
-            </div>
-            <h4 class="fw-bold pb-2">Super Mario</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate dolorem pariatur eligendi facere quia blanditiis
-              asperiores, repudiandae architecto amet aspernatur in totam quos
-              accusantium dicta eius similique itaque beatae quaerat!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-3">
-        <div
-          class="card text-center py-3"
-          data-aos="fade-up-left"
-          data-aos-duration="2000"
-        >
-          <div class="card-body">
-            <div class="circle">
-              <span><i class="fab fa-github fa-lg fa-fw"></i></span>
-            </div>
-            <h4 class="fw-bold pb-2">GitHub</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate dolorem pariatur eligendi facere quia blanditiis
-              asperiores, repudiandae architecto amet aspernatur in totam quos
-              accusantium dicta eius similique itaque beatae quaerat!
+              {{ project?.text }}
             </p>
           </div>
         </div>

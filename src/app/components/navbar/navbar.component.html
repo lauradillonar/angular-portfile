@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top text-uppercase">
   <div class="container">
-    <a class="navbar-brand" href="#"
-      ><img src="./assets/img/cfc94.png" alt="ConFluencia Creativa"
+    <a class="navbar-brand" href="{{ lang?.logo?.url }}"
+      ><img src="{{ lang?.logo?.src }}" alt="{{ lang?.logo?.alt }}"
     /></a>
     <button
       class="navbar-toggler"
@@ -16,18 +16,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <a class="nav-link active px-lg-4 rounded" aria-current="page" href="#"
-          >Home</a
-        >
-        <a class="nav-link px-lg-4 rounded" href="#">Projects</a>
-        <a class="nav-link px-lg-4 rounded" href="#">Experience</a>
-        <a class="nav-link px-lg-4 rounded" href="#">Education</a>
         <a
-          class="nav-link px-lg-4 rounded"
-          href="https://confluenciacreativa.com"
-          >Blog</a
+          class="nav-link active px-lg-4 rounded"
+          aria-current="page"
+          href="{{ lang?.navbar?.home?.url }}"
+          >{{ lang?.navbar?.home?.link }}</a
         >
-        <a class="nav-link px-lg-4 rounded" href="#">Contact</a>
+        <div *ngFor="let item of items">
+          <a class="nav-link px-lg-4 rounded" href="{{ item?.url }}">{{
+            item?.link
+          }}</a>
+        </div>
       </div>
     </div>
   </div>

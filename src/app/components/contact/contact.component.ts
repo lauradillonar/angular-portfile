@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfileService } from 'src/app/services/portfile.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: PortfileService) { }
+
+  myPortfile:any;
+  lang: any;
 
   ngOnInit(): void {
+    this.data.getData().subscribe(data =>{
+      this.myPortfile=data;
+      this.lang=this.myPortfile.en;
+    });
   }
-
 }

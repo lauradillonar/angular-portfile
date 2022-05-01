@@ -11,16 +11,15 @@ export class AboutmeComponent implements OnInit {
   constructor(private data: PortfileService) { }
   
   myPortfile:any;
+  lang: any;
   skills:any = [];
   values: number[] = [10,20,30,40,50,60,70,80,90,100];
 
   ngOnInit(): void {
     this.data.getData().subscribe(data =>{
-      console.log(data);
       this.myPortfile=data;
-      this.skills= this.myPortfile.en.about.skills;
-  
+      this.lang=this.myPortfile.en;
+      this.skills= this.lang.about.skills;
     });
   }
-
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfileService } from 'src/app/services/portfile.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: PortfileService) { }
+
+  myPortfile:any;
+  items:any = [];
+  lang: any;
 
   ngOnInit(): void {
+    this.data.getData().subscribe(data =>{
+      this.myPortfile=data;
+      this.lang = this.myPortfile.en;
+      this.items= this.lang.navbar.cards;
+    });
   }
-
 }

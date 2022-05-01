@@ -1,123 +1,81 @@
 <section class="experience py-5">
   <div class="container py-5">
-    <h1 class="text-center pb-5">Experience.</h1>
-    <div class="row mb-3">
-      <div class="card my-3" data-aos="fade-left" data-aos-duration="2000">
+    <h1 class="text-center pb-5">{{ lang?.experience?.title }}</h1>
+    <div class="row mb-3" *ngFor="let item of items; index as i">
+      <div
+        class="card my-3"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        *ngIf="i % 2 === 0"
+      >
         <div class="row">
           <div class="col-md-4 title">
             <div class="py-5 px-5">
-              <h4 class="fw-bold pb-2">ConFluencia Creativa</h4>
-              <h6>FrontEnd and BackEnd Developments</h6>
+              <h4 class="fw-bold pb-2" [innerHTML]="item?.title"></h4>
+              <h6 [innerHTML]="item?.subtitle"></h6>
             </div>
           </div>
           <div class="col-md-8 py-5 px-5">
+            <p>{{ item?.when }}<br />{{ item?.where }}</p>
             <p>
-              March 2020 - Present. <br />Palermo Buenos Aires, Salta,
-              Argentina.
-            </p>
-            <p>
-              My latest developments in HTML, CSS, Bootstrap, Javascript,
-              Angular and Python Flask:<br /><a
-                href="https://github.com/lauradillonar"
+              <span [innerHTML]="item?.text"></span>
+              <a
+                *ngIf="item?.link1 != ''"
+                href="{{ item?.url1 }}"
                 target="blank"
-                >github.com/lauradillonar</a
+                ><br />{{ item?.link1 }}<br
+              /></a>
+              <a
+                *ngIf="item?.link2 != ''"
+                href="{{ item?.url2 }}"
+                target="blank"
+                >{{ item?.link2 }}<br
+              /></a>
+              <a
+                *ngIf="item?.link3 != ''"
+                href="{{ item?.url3 }}"
+                target="blank"
+                >{{ item?.link3 }}</a
               >
             </p>
           </div>
         </div>
       </div>
-      <div class="card my-3" data-aos="fade-right" data-aos-duration="2000">
+      <div
+        class="card my-3"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        *ngIf="i % 2 === 1"
+      >
         <div class="row">
           <div class="col-md-4 title">
             <div class="py-5 px-5">
-              <h4 class="fw-bold pb-2">
-                Diffusion, Statistics analysis <br />
-                and SEO
-              </h4>
-              <h6>Frecuencia Azul Radio</h6>
+              <h4 class="fw-bold pb-2" [innerHTML]="item?.title"></h4>
+              <h6 [innerHTML]="item?.subtitle"></h6>
             </div>
           </div>
           <div class="col-md-8 py-5 px-5">
+            <p>{{ item?.when }}<br />{{ item?.where }}</p>
             <p>
-              July 2017 - April 2020 <br />
-              Palermo Buenos Aires, Argentina.
-            </p>
-            <p>
-              <a href="https://twitter.com/lauradillonar" target="blank"
-                >twitter.com/lauradillonar</a
-              ><br />
-              <a href="https://facebook.com/fazulradio" target="blank"
-                >facebook.com/fazulradio</a
-              ><br />
-              <a href="https://bit.ly/grupoPictos" target="blank"
-                >bit.ly/grupoPictos</a
+              <span [innerHTML]="item.text"></span>
+              <a
+                *ngIf="item?.link1 != ''"
+                href="{{ item?.url1 }}"
+                target="blank"
+                ><br />{{ item?.link1 }}<br
+              /></a>
+              <a
+                *ngIf="item?.link2 != ''"
+                href="{{ item?.url2 }}"
+                target="blank"
+                >{{ item?.link2 }}<br
+              /></a>
+              <a
+                *ngIf="item?.link3 != ''"
+                href="{{ item?.url3 }}"
+                target="blank"
+                >{{ item?.link3 }}</a
               >
-              #Autism #Asperger #SAAC #VisualCommunication #Pictograms
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card my-3" data-aos="fade-left" data-aos-duration="2000">
-        <div class="row">
-          <div class="col-md-4 title">
-            <div class="py-5 px-5">
-              <h4 class="fw-bold pb-2">
-                Mathematics tutor<br />for children and teenagers
-              </h4>
-              <h6>We study at home</h6>
-            </div>
-          </div>
-          <div class="col-md-8 py-5 px-5">
-            <p>
-              January 1998 - September 2012. <br />Salta, Córdoba, Mendoza,
-              Palermo Buenos Aires, City Bell La Plata.
-            </p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="card my-3" data-aos="fade-right" data-aos-duration="2000">
-        <div class="row">
-          <div class="col-md-4 title">
-            <div class="py-5 px-5">
-              <h4 class="fw-bold pb-2">
-                Secretary of Institutional Evaluation
-              </h4>
-              <h6>Escuela Superior Nacional Nautica</h6>
-            </div>
-          </div>
-          <div class="col-md-8 py-5 px-5">
-            <p>March 2005 - March 2006. <br />Buenos Aires, Argentina.</p>
-            <p>
-              We obtain the CONEAU certification for the ESNN by integrating the
-              Institutional Self-Evaluation team with the MNS Guillermo
-              Nassello, Ph.D. Psychology Paladino, Lic. Horacio Cappiello from
-              UBA and members of the ESNN.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="card my-3" data-aos="fade-left" data-aos-duration="2000">
-        <div class="row">
-          <div class="col-md-4 title">
-            <div class="py-5 px-5">
-              <h4 class="fw-bold pb-2">
-                Migration to Linux of Fac.Cs.Naturales
-              </h4>
-              <h6>
-                Universidad Nacional Salta <br />
-                Technical Secretariat
-              </h6>
-            </div>
-          </div>
-          <div class="col-md-8 py-5 px-5">
-            <p>
-              January - April 2002. <br />
-              Salta, Argentina.
-            </p>
-            <p>
-              Linux training coordinator at the Rector's office and
-              Faculties.<br />Linux Installation.
             </p>
           </div>
         </div>
