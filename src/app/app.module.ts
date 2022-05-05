@@ -1,3 +1,4 @@
+import { Firestore } from '@angular/fire/firestore';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
