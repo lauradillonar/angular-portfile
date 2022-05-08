@@ -19,6 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
+import { ContactGuard } from './guards/contact.guard';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { environment } from 'src/environments/environment';
     ContactComponent,
     FooterComponent,
     HomeComponent,
+    BlogComponent,
     
   ],
   imports: [
@@ -41,7 +44,7 @@ import { environment } from 'src/environments/environment';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
-  providers: [AngularFirestore],
+  providers: [AngularFirestore, ContactGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

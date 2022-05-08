@@ -2,6 +2,7 @@ import { DataService } from './../../services/data.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PortfileService } from 'src/app/services/portfile.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact',
@@ -37,12 +38,18 @@ export class ContactComponent implements OnInit {
 
   async onSave(): Promise<void> {
     if (this.contactForm.valid){
-      console.log(this.contactForm.value);
-      const formValue = this.contactForm.value;
-      await this.dataSvc.onSaveContact(formValue);
-
+      try{
+        //console.log(this.contactForm.value);
+        const formValue = this.contactForm.value;
+        await this.dataSvc.onSaveContact(formValue);
+        Swal.fire("Message sent", "See soon!", "success");
+        this.contactForm.reset();
+      }catch(e){
+        alert(e);
+      }
     } else {
-      console.log('Not valid');
+      //console.log('Not valid');
+      Swal.fire("Oops...", "Please check the form data", "error");
     }
   }
 

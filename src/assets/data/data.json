@@ -3,39 +3,46 @@
             "logo": {
                 "src":"./assets/img/cfc94.png",
                 "alt":"ConFluencia Creativa",
-                "url":"#"
+                "url":"",
+                "fragment": "main"
             },
             "navbar":{
                     "home":{
                                 "id": 1,
                                 "link": "HOME",
-                                "url": ""
+                                "url": "",
+                                "fragment": "main"
                     }, 
                     "cards": [
                         {
                             "id": 2,
                             "link": "PROJECTS",
-                            "url":"#projects"
+                            "url":"",
+                            "fragment":"projects"
                         },
                         {
                             "id": 3,
                             "link": "EXPERIENCE",
-                            "url":"#experience"
+                            "url":"",
+                            "fragment":"experience"
                         },
                         {
                             "id": 4,
                             "link": "EDUCATION",
-                            "url": "#education"
+                            "url": "",
+                            "fragment":"education"
                         },
                         {
                             "id": 5,
                             "link": "BLOG",
-                            "url": "https://confluenciacreativa.com"
+                            "url": "blog",
+                            "fragment":"" 
                         },
                         {
                             "id": 6,
                             "link": "CONTACT",
-                            "url": "#contact"
+                            "url": "",
+                            "fragment":"contact"
                         }
                     ]
             },
