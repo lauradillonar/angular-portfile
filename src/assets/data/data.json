@@ -1,7 +1,7 @@
 {
     "en": {
             "logo": {
-                "src":"./assets/img/cfc94.png",
+                "src":"portfile/assets/img/cfc94.png",
                 "alt":"ConFluencia Creativa",
                 "url":"",
                 "fragment": "main"
@@ -56,7 +56,7 @@
                             "subtitle": "In constant search of technological tools to improve the quality of life.",
                             "text":"Since I was seven years old, I have been amazed by what iI was able to achieve writting code on a computer. I continue to learn about new information technologies and I love that they solve problems and adapt to particular needs. I think that creativity can solve almost any problem.<br /><br />You may need a simple, commercial website, or a mobile application? No problem! My job is to create and make your brand stand out. It requires listening to you, understanding needs and doing all those with genuine care.<br /><br />To learn more about me, keep exploring my portfile. Please, feel free to contact me.",
                             "image":{
-                                "src":"./assets/img/laura.jpg",
+                                "src":"./portfile/assets/img/laura.jpg",
                                 "alt": "Laura Dillon"
                             },
                             "skills":[
